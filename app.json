@@ -9,7 +9,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "PicSwipe a besoin d'accéder à vos photos pour vous permettre de les organiser.",
+        "NSPhotoLibraryAddUsageDescription": "PicSwipe a besoin d'accéder à vos photos pour les gérer."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +41,14 @@
           "dark": {
             "backgroundColor": "#000000"
           }
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "PicSwipe a besoin d'accéder à vos photos pour vous permettre de les organiser.",
+          "savePhotosPermission": "PicSwipe a besoin de pouvoir modifier vos photos.",
+          "isAccessMediaLocationEnabled": true
         }
       ]
     ],
